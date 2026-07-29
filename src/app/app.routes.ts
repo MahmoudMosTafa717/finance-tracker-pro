@@ -17,13 +17,13 @@ export const routes: Routes = [
   },
   {
     path: '',
+    loadComponent: () => import('./features/landing/landing-page').then((m) => m.LandingPage),
+    pathMatch: 'full',
+  },
+  {
+    path: '',
     component: RootLayout,
     children: [
-      {
-        path: '',
-        redirectTo: 'dashboard',
-        pathMatch: 'full',
-      },
       {
         path: 'dashboard',
         loadComponent: () => import('./features/dashboard/dashboard').then((m) => m.Dashboard),

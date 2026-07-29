@@ -9,7 +9,7 @@
 <main class="grid grid-cols-1 gap-6">
   <!-- ^ ==================== cards ==================== -->
   <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <app-card>
+    <app-card class="animate-fade-in-up opacity-0 animation-delay-100 block">
       <app-card-content>
         <div class="flex my-4 items-center justify-between">
           <app-card-title>Total Balance</app-card-title>
@@ -22,7 +22,7 @@
         <p class="text-3xl font-semibold">${{ lastMonthBalance }}</p>
       </app-card-content>
     </app-card>
-    <app-card>
+    <app-card class="animate-fade-in-up opacity-0 animation-delay-200 block">
       <app-card-content>
         <div class="flex my-4 items-center justify-between">
           <app-card-title>Total Income</app-card-title>
@@ -35,7 +35,7 @@
         <p class="text-3xl font-semibold">${{ lastMonthInc }}</p>
       </app-card-content>
     </app-card>
-    <app-card>
+    <app-card class="animate-fade-in-up opacity-0 animation-delay-300 block">
       <app-card-content>
         <div class="flex my-4 items-center justify-between">
           <app-card-title>Total Expenses</app-card-title>
@@ -62,7 +62,7 @@
 
   <!-- ^ ==================== transactions ==================== -->
   <section>
-    <app-card>
+    <app-card class="animate-fade-in-up opacity-0 animation-delay-600 block">
       @for (trans of transationsList; track trans._id) {
         <div class="border rounded-2xl m-4 hover:bg-sky-100">
           <div class="card p-4">

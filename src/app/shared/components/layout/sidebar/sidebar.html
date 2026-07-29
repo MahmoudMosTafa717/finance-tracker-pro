@@ -11,12 +11,12 @@
   class="fixed inset-y-0 left-0 z-50 w-64 bg-sidebar border-r border-sidebar-border h-screen flex flex-col transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0"
 >
   <div class="p-6 flex items-center justify-between">
-    <div class="flex items-center gap-2">
-      <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+    <a routerLink="/" class="flex items-center gap-2 cursor-pointer group">
+      <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
         <svg lucideWallet class="w-5 h-5 text-primary-foreground"></svg>
       </div>
       <span class="font-medium text-sidebar-foreground">FinanceTracker</span>
-    </div>
+    </a>
 
     <button
       (click)="sidebarService.close()"
